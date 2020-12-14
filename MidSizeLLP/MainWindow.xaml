@@ -1,0 +1,44 @@
+﻿<Window x:Class="MidSizeLLP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MidSizeLLP"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="*" />
+
+
+
+        </Grid.ColumnDefinitions>
+        <Grid Background="#01FFFFFF" >
+            <StackPanel>
+                <ListView FontSize="18" Height="300" Width="230" SelectionChanged="SettingsListViewSelectionChanged">
+                    <ListViewItem Padding="1" x:Name="LendOut" Height="145">
+
+                        <StackPanel Orientation="Horizontal">
+
+                            <TextBlock Text="Lend Out" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Padding="1" x:Name="ViewLendOut" Height="150">
+
+                        <StackPanel Orientation="Horizontal">
+
+                            <TextBlock Text="View Lend Out" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                </ListView>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1" Background="White" x:Name="SettingsContentPanel">
+
+
+        </Grid>
+
+    </Grid>
+</Window>

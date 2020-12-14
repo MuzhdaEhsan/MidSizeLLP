@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="MidSizeLLP.ViewLendOut"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MidSizeLLP"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="300">
+    <Grid>
+        <StackPanel>
+            <Label Content="View Equipment Lent Out" HorizontalAlignment="Center" FontSize="20"/>
+        </StackPanel>
+        <StackPanel Margin="50" Orientation="Horizontal">
+            <Label Content="Name" />
+            <Label Content="EmpID" />
+            <Label Content="Description" />
+            <Label Content="Phone" />
+        </StackPanel>
+        <Grid>
+            <DataGrid Name="equipmentGrid" />
+        </Grid>
+    </Grid>
+    
+</UserControl>

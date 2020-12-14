@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="MidSizeLLP.LendOut"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MidSizeLLP"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="300">
+    <Grid>
+        <StackPanel Margin="20">
+            
+            <Label Content="Lend Out:" HorizontalAlignment="Center" FontSize="20"/>
+            <Label Content="Name:" Target="{Binding ElementName=txtName}" />
+            <TextBox Name="txtName" Margin="0,4,20,20" />
+
+
+            <Label Content="Employee ID:" Target="{Binding ElementName=txtEmployeeID}"/>
+            <TextBox Name="txtEmployeeID" Margin="0,4,20,20" />
+
+            <Label Content="Desc of Equipment:" Target="{Binding ElementName=txtDescEquipment}" />
+            <TextBox Name="txtDescEquipment" Margin="0,4,20,20" />
+
+            <Label Content="Contact Phone Number:" Target="{Binding ElementName=txtContactNumber}" />
+            <TextBox Name="txtContactNumber" Margin="0,4,20,20" />
+
+            <Button Content="Add To Database" Name="AddRecord" ToolTip="Add to database" Click="addLendOut"  Height="40" Width="100" />
+
+        </StackPanel>
+    </Grid>
+</UserControl>
